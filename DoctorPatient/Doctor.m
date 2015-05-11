@@ -10,4 +10,18 @@
 
 @implementation Doctor
 
+- (instancetype) initWithName: (NSString *)name initWithSpecialization: (NSString*)specialize{
+    self = [super init];
+    if (self) {
+        self.name = name;
+        self.specialize = specialize;
+    }
+    return self;
+}
+
+-(void) askForPatientInfo{
+    NSLog(@"What is your Name and age");
+}
+
+
 @end

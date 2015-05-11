@@ -7,7 +7,21 @@
 //
 
 #import "Person.h"
+#import "Doctor.h"
 
 @interface Patient : Person
+
+@property (nonatomic, strong) NSString *medicalCard;
+@property (nonatomic,strong) NSString *name;
+@property (nonatomic, assign) int age;
+
+- (instancetype) initWithName: (NSString *)name initWithAge: (int) age;
+
+-(void) askForDoctorName;
+
+-(void) askForDoctorSpecialization;
+
+-(void) askForDoctor: (Doctor*) doctor;
+
 
 @end

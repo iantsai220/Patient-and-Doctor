@@ -8,6 +8,17 @@
 
 #import "Person.h"
 
-@interface Doctor : Person
+
+@interface Doctor : NSObject
+
+@property (nonatomic,strong) NSString *name;
+@property(nonatomic, strong) NSString *specialize;
+
+- (instancetype) initWithName: (NSString *)name initWithSpecialization: (NSString*)specialize;
+
+-(void) askForPatientName;
+
+-(void) askForPatientAge;
+
 
 @end
